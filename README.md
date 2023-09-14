@@ -7,11 +7,11 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors](https://img.shields.io/github/contributors/neealdon3/Eternal-hub.svg?style=for-the-badge)](https://github.com/neealdon3/Eternal-hub/graphs/contributors)
-[![Forks](https://img.shields.io/github/forks/neealdon3/Eternal-hub.svg?style=for-the-badge)](https://github.com/neealdon3/Eternal-hub/forks)
-[![Stargazers](https://img.shields.io/github/stars/neealdon3/Eternal-hub.svg?style=for-the-badge)](https://github.com/neealdon3/Eternal-hub/stargazers)
-[![Issues](https://img.shields.io/github/issues/neealdon3/Eternal-hub.svg?style=for-the-badge)](https://github.com/neealdon3/Eternal-hub/issues)
-[![MIT License](https://img.shields.io/github/license/neealdon3/Eternal-hub.svg?style=for-the-badge)](https://github.com/neealdon3/Eternal-hub/blob/master/LICENSE.txt)
+[![Contributors](https://img.shields.io/github/contributors/Eternal-Network/Eternal-hub.svg?style=for-the-badge)](https://github.com/Eternal-Network/Eternal-hub/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/Eternal-Network/Eternal-hub.svg?style=for-the-badge)](https://github.com/Eternal-Network/Eternal-hub/forks)
+[![Stargazers](https://img.shields.io/github/stars/Eternal-Network/Eternal-hub.svg?style=for-the-badge)](https://github.com/Eternal-Network/Eternal-hub/stargazers)
+[![Issues](https://img.shields.io/github/issues/Eternal-Network/Eternal-hub.svg?style=for-the-badge)](https://github.com/Eternal-Network/Eternal-hub/issues)
+[![MIT License](https://img.shields.io/github/license/Eternal-Network/Eternal-hub.svg?style=for-the-badge)](https://github.com/Eternal-Network/Eternal-hub/blob/master/LICENSE.txt)
 
 
 
@@ -23,9 +23,9 @@
   <p align="center">
     Eternal Box is a hub for students who are bored at school!
     <br />
-    <a href="https://github.com/neealdon3/Eternal-hub/issues">Report Bug</a>
+    <a href="https://github.com/Eternal-Network/Eternal-hub/issues">Report Bug</a>
     ·
-    <a href="https://github.com/neealdon3/Eternal-hub/issues">Request Feature</a>
+    <a href="https://github.com/Eternal-Network/Eternal-hub/issues">Request Feature</a>
   </p>
 </div>
 
@@ -53,13 +53,7 @@
   </ol>
 </details>
 
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
 [![Screenshot](https://raw.githubusercontent.com/Eternal-Network/Assets/main/Screenshot.jpeg)](https://eternal-network.com/Eternal-hub)
-Hello! My username/alias is NeeAldon3. This project Eternal Box, is a hub for students who are bored at school.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +99,7 @@ To get a local copy up and running follow these simple example steps.
 - [x] Password-Protection(for when you panic)
 - [x] Unblocker
 
-See this [issue](https://github.com/neealdon3/Eternal-hub/issues/1) for a full list of proposed features.
+See this [issue](https://github.com/Eternal-Network/Eternal-hub/issues/1) for a full list of proposed features.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,7 +137,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - blade_immovably193@simplelogin.com
 
-Project Link: [https://github.com/neealdon3/Eternal-hub](https://github.com/neealdon3/Eternal-hub)
+Project Link: [https://github.com/Eternal-Network/Eternal-hub](https://github.com/Eternal-Network/Eternal-hub)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
