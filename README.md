@@ -66,7 +66,12 @@ https://eternal-hub.pages.dev/
 <p>
 https://neealdon3.github.io/Eternal-hub/
 </p>
-
+<p>
+  https://eternal-hub.neealdon3.repl.co/
+</p>
+<p>
+  https://hohomath.glitch.me/
+</p>
 
 
 ### Built With
