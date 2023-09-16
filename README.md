@@ -61,10 +61,10 @@
 
 ### Links
 <p>
-https://eternal-network.github.io/Eternal-hub/
+https://eternal-hub.pages.dev/
 </p>
 <p>
-  https://eternal-hub.bladeimmovably1.repl.co/
+https://neealdon3.github.io/Eternal-hub/
 </p>
 
 
