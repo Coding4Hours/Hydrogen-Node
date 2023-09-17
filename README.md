@@ -49,6 +49,12 @@
   </ol>
 </details>
 
+
+<!-- GETTING STARTED -->
+## Deployment
+
+
+
 [![Screenshot](https://raw.githubusercontent.com/Eternal-Network/Assets/main/Screenshot.jpeg)](https://eternal-network.com/Eternal-hub)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -78,17 +84,6 @@ https://neealdon3.github.io/Eternal-hub/
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" height="40" width="40" alt="CSS">  CSS</a></li>
 </ul>
   </pre>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Deployment
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
