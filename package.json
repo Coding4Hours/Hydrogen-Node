@@ -1,0 +1,29 @@
+{
+  "name": "eternal-Hub",
+  "version": "3.0.0",
+  "description": "Proxy site by Coding4hours",
+  "type": "module",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eternal-Network/Eternal-hub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eternal-Network/Eternal-hub/issues"
+  },
+  "homepage": "https://github.com/Eternal-Network/Eternal-hub#readme",
+  "dependencies": {
+    "@titaniumnetwork-dev/ultraviolet": "^1.0.5",
+    "@tomphttp/bare-server-node": "^1.2.2",
+    "express": "^4.18.2"
+  }
+}
