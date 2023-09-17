@@ -1,248 +1,325 @@
-
-
 <!DOCTYPE html>
-<html lang="en-US"><head>
-    <title>TI-108SC Calculator</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A simple four function calculator, modeled on the Texas Instruments TI-108 calculator.">
+<html lang="en">
+  <head>
+  	<script src="./uv/uv.config.js" defer=""></script>
+    <script src="./js/bye_blocker.js" defer=""></script>
+	<script src="./js/index.js" defer=""></script>
+	<script src="./js/preload.js" defer=""></script>
+	<script src="./js/search.js" defer=""></script>
+	  <script src="register-sw.js" defer></script>
+
     <meta charset="UTF-8">
-    <meta name="author" content="Samuel Cupidon">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css">
-    <link rel="stylesheet" href="https://calc2.bestmathbooks.online/calc2/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+ body {
+        font-family: "Comfortaa";
+        font-size: "25px";
+        text-align: center;
+        background-color: #1e2124;
+        background-repeat: no-repeat;
+        background-size: cover
+      }
 
+      .container {
+        margin-top: 10%;
+        font-family: "Comfortaa";
+        font-size: "50px";
+        color: #6886ed;
+      }
 
+      .container p {
+        font-size: 50px;
+        margin-bottom: 2px;
+      }
+
+      .container a {
+        height: 20px;
+        background: inherit;
+        background-size: cover;
+        color: #ddd;
+        border: 0;
+        cursor: pointer;
+        font-family: "Comfortaa";
+        font-size: 17px;
+        transition: 0.3s;
+      }
+
+      .container a:hover {
+        font-size: 23;
+      }
+
+      .url {
+        width: 300px;
+        margin: auto;
+      }
+
+      .w3-xlarge {
+        outline: none;
+        background: transparent;
+        border: 1px solid #6886ed;
+        padding: 0 10px;
+        border-radius: 6px;
+        height: 3.5rem;
+        width: 40rem;
+        margin: 10px;
+        color: white;
+      }
+      body {
+        font-family: Arial, Helvetica, Comfortaa sans-serif;
+      }
+.navbar {
+        overflow: hidden;
+        background-color: #29304d;
+      }
+
+      .navbar a {
+        float: left;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        padding: 18px 16px;
+        text-decoration: none;
+
+        .w3-xlarge {
+          outline: none;
+          background: transparent;
+          border: 1px solid #6886ed;
+          padding: 0 10px;
+          border-radius: 6px;
+          height: 3.5rem;
+          width: 40rem;
+          margin: 10px;
+          color: white;
+        }
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: Comfortaa;
+        margin: 0;
+      }
+
+      .navbar a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: #1e2124;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #282b30;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        font-family: Comfortaa;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #7289da;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .button-3 {
+        appearance: none;
+        background-color: #2ea44f;
+        border: 1px solid rgba(27, 31, 35, .15);
+        border-radius: 6px;
+        box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 6px 16px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+
+      .button-3:focus:not(:focus-visible):not(.focus-visible) {
+        box-shadow: none;
+        outline: none;
+      }
+
+      .button-3:hover {
+        background-color: #2c974b;
+      }
+
+      .button-3:focus {
+        box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+        outline: none;
+      }
+
+      .button-3:disabled {
+        background-color: #94d3a2;
+        border-color: rgba(27, 31, 35, .1);
+        color: rgba(255, 255, 255, .8);
+        cursor: default;
+      }
+
+      .button-3:active {
+        background-color: #298e46;
+        box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+      }
+
+      .navbar a {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: Comfortaa;
+        margin: 0;
+      }
+
+      .light-mode {
+ 	 background-color: white;
+ 	 color: black;
+        font-family: Comfortaa;
+	}
+    </style>
   </head>
-
   <body>
-   <div class="container-fluid">
-     <div class="row-fluid">
-       <div id="helpBar" class="text-center">
-         <span id="helpText">Click here or press H for help</span>
-         <span id="helpCloseButton">×</span>
-       </div><!--#helpBar-->
+    <div class="navbar">
+      <a href="./realindex.html">Home</a>
+     <a href="./proxs.html">Proxys</a>
+     <a href="./gxmes.html">Games</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <b>Extras</b>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./blank.html">About:blank</a>
+	<a href="./leaderboard.html">Leaderboard</a>
+	<a href="./search.html">Proxy</a>
+        </div>
+      </div>
+    </div>
+    <title>Eternal Proxy</title>
+</head>
 
-       <div class="col-xs-12 col-sm-offset-4 col-sm-5 col-md-offset-5 col-md-4" id="calculator">
+<body>
+<div class="container">
+<div>
 
-         <span class="form-control text-center" id="memoryNegativeError">
-           <span id="memoryIndicator" class="gray">M</span>
-           <br>
-           <span class="gray" id="negativeIndicator">—</span>
-           <br>
-           <span class="gray" id="errorIndicator">E</span>
-         </span><!--.memoryNegativeError-->
+<div class="container">
+<div>
+<script>
+                async function go() {
+                    var input = document.getElementById('url-target');
+                    if (input.value) {
+                        await registerSW();
+                        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(input.value);
+                    } else {
+                        alert('Please provide a link. It does not require https://.');
+                    }
+                }
+            </script>
+	<span class="w3-large"> <font size="+20"><b>Eternal Proxy</b></font><br></span>
+<span class="w3-large"><font size="+2.5">Made by students, for students :)</span>
+	<input align="center" class="w3-xlarge" type='text' placeholder='www.example.com' id='url-target' onkeydown='if(event.key==="Enter") go()' />
 
-         <input type="text" class="form-control text-right" autofocus="" disabled="" id="display" placeholder="0.0000000">
-         <p class="text-justify" id="name"><small>TEXAS INSTRUMENTS</small><span id="brand">&nbsp;&nbsp;TI-108SC</span></p>
-         <div class="solarPanel col-xs-1"></div>
-         <div class="solarPanel col-xs-1"></div>
-         <div class="solarPanel col-xs-1"></div>
-         <div class="solarPanel col-xs-1"></div>
-         <div class="col-xs-1"><div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-id-calcTypeToggle bootstrap-switch-mini bootstrap-switch-inverse bootstrap-switch-on bootstrap-switch-animate" style="width: 78.6px;"><div class="bootstrap-switch-container" style="width: 109px; margin-left: -32px;"><span class="bootstrap-switch-handle-off bootstrap-switch-danger" style="width: 32px;">OFF</span><span class="bootstrap-switch-label" style="width: 45px;">MDAS</span><span class="bootstrap-switch-handle-on bootstrap-switch-success" style="width: 32px;">ON</span><input type="checkbox" id="calcTypeToggle"></div></div></div>
-         <div class="col-xs-12" id="bottomLine"><br></div>
-         <br>
+</div>
 
-         <div id="buttons">
-           <button class="btn btn-danger">+/-</button>
-           <button class="btn btn-danger">√</button>
-           <button class="btn btn-danger">%</button>
-           <button class="btn btn-danger">÷</button>
+        <p align="center">
+          <button class="button-3" role="button" onclick="func()">Launch ByeBlocker</button>
+	<button onclick="launchab()" id="launchab" class="button-3">Launch in about:blank</button>
+	<div class="action-btns">
+      <button class="play button-3">Start the Music!!</button>
+      <button class="pause button-3">Pause...</button>
+       </div>
+	 </p>
+	<script>
+		function launchab() {
+    const tab = window.open('about:blank', '_blank');
+    const iframe = document.createElement('iframe');
+    const stl = iframe.style;
+    stl.border = stl.outline = 'none';
+    stl.width = '100vw';
+    stl.height = '100vh';
+    stl.position = 'fixed';
+    stl.left = stl.right = stl.top = stl.bottom = '0';
+    iframe.src = self.location;
+    tab.document.body.appendChild(iframe);
+    window.parent.window.location.replace(localStorage.getItem("panicurl") || 'https://classroom.google.com/h')
+}
+let playBtn = document.getElementsByClassName("play");
+let pauseBtn = document.getElementsByClassName("pause");
 
-           <button class="btn btn-danger" id="MRCButton">MRC</button>
-           <button class="btn btn-danger" onclick="blankTab(window.location.origin + './realindex.html')">M-</button>
-           <a target="_blank" href="./realindex.html"><button class="btn btn-danger">M+</button></a>
+let text = document.querySelector("p");
 
+const audio = new Audio("./audio.mp3");
 
-           <button class="btn btn-danger">×</button>
+playBtn[0].addEventListener("click", (e) => {
+  audio.play();
+});
 
-           <button class="btn btn-default">7</button>
-           <button class="btn btn-default">8</button>
-           <button class="btn btn-default">9</button>
-           <button class="btn btn-danger">-</button>
-
-           <button class="btn btn-default">4</button>
-           <button class="btn btn-default">5</button>
-           <button class="btn btn-default">6</button>
-           <button class="btn btn-danger">+</button>
-
-           <button class="btn btn-default moveUp">1</button>
-           <button class="btn btn-default moveUp">2</button>
-           <button class="btn btn-default moveUp">3</button>
-           <button class="btn btn-danger" id="equalsKey">=</button>
-
-           <button class="btn btn-danger moveUp2" id="onButton">ON/C</button>
-           <button class="btn btn-default text-center moveUp2">0</button>
-           <button class="btn btn-default text-center moveUp2">.</button>
-         </div><!--buttons-->
-         <img src="./images/TI_Logo.png" alt="" id="logo">
-       </div><!--#calculator-->
-     </div><!--row-fluid-->
-   </div><!--container-fluid-->
-
-    <div id="myModal" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="modalClose">×</button>
-            <h4 class="modal-title">TI-108SC Help</h4>
-          </div><!--modal-header-->
-          <div class="modal-body">
-            <p>Press 'H' from the main screen to show this help screen.<br>Click on the headers to see the individual sections.<br>Click the × button or outside the help screen to exit.<br><br></p>
-            <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">About</a>
-                  </h4><!--panel-title-->
-                </div><!--panel-heading-->
-                <div id="collapseOne" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>The TI-108SC is a basic four-function calculator. It is heavily based on the Texas Instruments TI-108. It is, of course, not an actual Texas Instruments product. It features a solar panel for battery conservation, order of operations toggling, and memory for the storage of a number for later retrieval.</p>
-                  </div><!--panel-body-->
-                </div><!--#collapseOne-->
-              </div><!--panel-default-->
-               <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Display - left section</a>
-                  </h4><!--panel-title-->
-                </div><!--panel-heading-->
-                <div id="collapseTwo" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>The 3 indicators on the left are:<br><br>
-                        </p><dl class="dl-horizontal">
-                          <dt>M</dt>
-                          <dd>This indicator will be greyed out when the memory value is 0. When the memory value is not 0, this indicator will be black.</dd>
-                          <br>
-                          <dt>—</dt>
-                          <dd>This indicator will be greyed out when the currently displayed value is positive, and black when it is negative.</dd>
-                          <br>
-                          <dt>E</dt>
-                          <dd>This indicator will be greyed out in most circumstances. It will turn black if your calculation returns a solution which either exceeds the display limits (-99999999 &lt;= x &lt;= 99999999) or is invalid (e.g. 1 / 0, √-1). When it's black, you must press the 'ON/C' button to continue your calculations.</dd>
-                          </dl><!--class-horizontal-->
-                  </div><!--panel-body-->
-                </div><!--#collapseTwo-->
-              </div><!--panel-default-->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Display - right section</a>
-                  </h4><!--panel-title-->
-                </div><!--panel-heading-->
-                <div id="collapseThree" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>There is a limit of 8 digits; accordingly, the maximum result your calculation can return is 99,999,999 and the minimum value it can return is -99,999,999. Results outside these limits will cause the calculator to error out. Also please note that due to the display limits, precision will be an issue past 7 decimal points.</p>
-                  </div><!--panel-body-->
-                </div><!--#collapseThree-->
-              </div><!--panel-default-->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">MDAS toggle button</a>
-                  </h4><!--panel-title-->
-                </div><!--panel-heading-->
-                <div id="collapseFour" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>The MDAS (<span class="emphasize">M</span>ultiplication, <span class="emphasize">D</span>ivision, <span class="emphasize">A</span>ddition, and <span class="emphasize">S</span>ubtraction) toggle button determines whether calculations will follow order of operations, or be calculated continuously.<br>When MDAS is on, order of operations will be followed. For example, 3 + 2 * 5 = 13, as the multiplication is calculated before the addition.<br>When MDAS is off, a subtotal will be calculated and displayed continuously as calculations are entered. For example, 3 + 2 * 5 = 25, as the operations are calculated in the order they are entered.
-                    <br> Note that only the '+', '-', '×' and '÷' operators are affected by the MDAS setting. Toggling the button will clear all running totals, calculations, and the current display value. If you need to carry a value between settings, use the memory functions.</p>
-                  </div><!--panel-body-->
-                </div><!--#collapseFour-->
-              </div><!--panel-default-->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">ON/C button</a>
-                  </h4><!--panel-title-->
-                </div><!--panel-heading-->
-                <div id="collapseFive" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>Press this button once to set the current display value to 0. Press it a second time to clear all calculations/running totals.</p>
-                  </div><!--panel-body-->
-                </div><!--#collapseFive-->
-              </div><!--panel-default-->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Operations buttons</a>
-                  </h4><!--panel-title-->
-                </div><!--panel-heading-->
-                <div id="collapseSix" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>When MDAS is on, the operations buttons can be pressed more than once in succession to operate with the current display value. For example 3+= would return 6 (3 + 3).<br>
-                    3++= would return 9 (3 + 3 + 3).<br>
-                    3++**-= would return 30 (3 + 3 + 3 * 3 * 3 - 3).<br>
-                    Pressing the equals button more than once does nothing.<br><br>When MDAS is off, pressing the operations buttons more than once would cause the operation to be performed on the current display value. For example 3++**-= would return 0 (since the last display value of 20736 would be subtracted by itself). Pressing equals more than once repeats the last operation. For example 3+2*5=== would return 625 (25 * 5 * 5).</p>
-                  </div><!--panel-body-->
-                </div><!--#collapseSix-->
-              </div><!--panel-default-->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">'+/-', '%' and '√' buttons</a>
-                  </h4><!--panel-title-->
-                </div><!--panel-heading-->
-                <div id="collapseSeven" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>The '+/-' button toggles the display value from positive to negative. You can see the current status on the indicator.<br><br>
-                    The '√' button calculates the square root of the current display number in place.<br><br>
-                    The '%' button calculates the percent of the last displayed number in place. For example, 12+10% would display 1.2. If there is no last displayed number, it will return the display number divided by 100. For example 10% would return 0.1.<br><br>
-                    Neither the '√' or the '%' buttons are affected by the MDAS setting.</p>
-                  </div><!--panel-body-->
-                </div><!--#collapseSeven-->
-              </div><!--panel-default-->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Memory buttons</a>
-                  </h4><!--panel-title-->
-                </div><!--panel-heading-->
-                <div id="collapseEight" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>The three buttons which store and retrieve a number from memory are M+, M-, and MRC. You can see if the memory has a non-zero value by looking at the indicator.<br>M+ adds the current display value to memory.<br>M- subtracts the current display value from memory.<br><br>If adding or subtracting the current value to the memory value would cause an overflow, the addition/subtraction will not be made and the calculator will error out. <br><br>When pressed once, pressing MRC <span class="emphasize">R</span>ecalls the memory value. Pressing MRC a second time will <span class="emphasize">C</span>lear the memory.</p>
-                  </div><!--panel-body-->
-                </div><!--#collapseEight-->
-              </div><!--panel-default-->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">Keyboard shortcuts</a>
-                  </h4><!--panel-title-->
-                </div><!--panel-heading-->
-                <div id="collapseNine" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <dl class="dl-horizontal">
-                      <dt>Calculator button</dt><dd><b>Keyboard key</b></dd><span class="visible-xs-block"><br></span>
-                      <dt>0 - 9, .</dt><dd>0 - 9, . (numpad or regular keys)</dd><span class="visible-xs-block"><br></span>
-                      <dt>ON/C</dt><dd>Z or Space</dd><span class="visible-xs-block"><br></span>
-                      <dt>+</dt><dd>+</dd><span class="visible-xs-block"><br></span>
-                      <dt>-</dt><dd>-</dd><span class="visible-xs-block"><br></span>
-                      <dt>×</dt><dd>*</dd><span class="visible-xs-block"><br></span>
-                      <dt>÷</dt><dd>/ or \</dd><span class="visible-xs-block"><br></span>
-                      <dt>=</dt><dd>Enter or =</dd><span class="visible-xs-block"><br></span>
-                      <dt>%</dt><dd>%</dd><span class="visible-xs-block"><br></span>
-                      <dt>√</dt><dd>$</dd><span class="visible-xs-block"><br></span>
-                      <dt>+/-</dt><dd>#</dd><span class="visible-xs-block"><br></span>
-                      <dt>M+</dt><dd>M</dd><span class="visible-xs-block"><br></span>
-                      <dt>M-</dt><dd>N</dd><span class="visible-xs-block"><br></span>
-                      <dt>MRC</dt><dd>B</dd><span class="visible-xs-block"><br></span>
-                      <dt>toggle MDAS</dt><dd>` (backtick key)</dd><span class="visible-xs-block"><br></span>
-                      <dt>Bring up this help menu</dt><dd>H</dd><span class="visible-xs-block"><br></span>
-                    </dl>
-                  </div><!--panel-body-->
-                </div><!--#collapseEight-->
-              </div><!--panel-default-->
-            </div><!--#accordion-->
-          </div><!--modal-body-->
-        </div><!--modal-content-->
-      </div><!--modal-dialog-->
-    </div><!--#myModal-->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js"></script>
-    <script src="https://calc2.bestmathbooks.online/calc2/main.js"></script>
-    <script src="https://calc2.bestmathbooks.online/calc2/blanktab.js"></script>
-  
-
-</body></html>
+pauseBtn[0].addEventListener("click", (e) => {
+  audio.pause();
+});
+	</script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p></p>
+        </font>
+      </div>
+      <font size="+2.5"></font>
+    </div>
+    <font size="+2.5"></font>
+    <span style="float: right; cursor: pointer;">×</span>
+    </div>
+    </div>
+    <div class="footer">
+      <a class="link underline" href="https://github.com/Eternal-Network/Eternal-hub">Github</a>
+      <a class="link underline" href="https://discord.gg/QGwumCE4">Discord</a>
+      <a class="link underline" href="./terms.html">Terms</a>
+      <a class="link underline" href="./privacy.html" style="margin-right: 14px;">Privacy</a> © NeeAldon3 2023 - <script>
+        document.write(new Date().getFullYear())
+      </script>
+    </div>
+  </body>
+</html>
