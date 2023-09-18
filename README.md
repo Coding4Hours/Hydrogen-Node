@@ -59,15 +59,13 @@
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-to-Koyeb)
 ```bash
 git clone https://github.com/Eternal-Network/Eternal-hub
-```
-```bash
+# clone the repo
 cd Eternal-hub
-```
-```bash
+# open the folder with the files
 npm install
-```
-```bash
+# install npm
 npm start
+# start the app
 ```
 
 [![Screenshot](https://raw.githubusercontent.com/Eternal-Network/Assets/main/Screenshot.jpeg)](https://eternal-network.com/Eternal-hub)
