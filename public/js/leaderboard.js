@@ -1,3 +1,4 @@
+var username = document.getElementById('pxyinput').value;
 let scores = [{
     name: "Player 1",
     score: 300
