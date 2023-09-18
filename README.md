@@ -67,7 +67,7 @@
 
 ### Links
 <p>
-  https://eternal-hub.neealdon3.repl.co/
+  https://eternal-hub.neealdon3.repl.co/public
 </p>
 <p>
 https://neealdon3.github.io/Eternal-hub
