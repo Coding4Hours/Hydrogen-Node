@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="tab">
   <head>
     <script src="/uv/uv.config.js" defer=""></script>
     <script src="/uv/uv.bundle.js" defer=""></script>
@@ -220,12 +220,7 @@
       <a href="/leaderboard.html">Leaderboard</a>
       <a href="/proxs.html">Proxys</a>
       <a href="/gxmes.html">Games</a>
-      <div class="dropdown">
-        <button class="dropbtn">
-          <b>Extras</b>
-          <i class="fa fa-caret-down"></i>
-        </button>
-      </div>
+      <button onclick="document.getElementById("tab").requestFullscreen();">Full Screen</button>
     </div>
     <title>Eternal Hub</title>
     <iframe src="https://eternal-proxy.onrender.com/" width="1520" height="660"></iframe>
