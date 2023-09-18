@@ -76,12 +76,6 @@ npm start
 
 ### Links
 <p>
-https://neealdon3.github.io/Eternal-hub
-</p>
-<p>
-  https://eternal-hub.pages.dev/
-</p>
-<p>
   https://eternal-hub-offical.onrender.com/
 </p>
 
