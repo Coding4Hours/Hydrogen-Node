@@ -52,11 +52,10 @@
 
 <!-- GETTING STARTED -->
 ## Deployment
-[![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-to-Heroku)
-[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Run-on-Replit)
-[![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-on-Railway)
-[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Remix-on-Glitch)
-[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-to-Koyeb)
+[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen-hub/)
+[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Hydrogen-Network/Hydrogen-hub&branch=main&name=Ultraviolet-App)
+[![Deploy to Cyclic](https://camo.githubusercontent.com/9c27ca7ef5947882143d1c04145ac1341dc7088b908d07bcbceab3c240d0456a/68747470733a2f2f6465706c6f792e6379636c69632e6170702f627574746f6e2e737667)](https://deploy.cyclic.app/Hydrogen-Network/Hydrogen-hub)
+
 ```bash
 git clone https://github.com/Eternal-Network/Eternal-hub
 # clone the repo
