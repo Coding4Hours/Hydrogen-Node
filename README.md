@@ -57,7 +57,6 @@
 [![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Hydrogen-Network/Hydrogen-hub)
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/Hydrogen-Network/Hydrogen-hub)
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Hydrogen-Network/Hydrogen-hub&branch=main&name=Ultraviolet-App)
-[![Deploy to Cyclic](https://camo.githubusercontent.com/9c27ca7ef5947882143d1c04145ac1341dc7088b908d07bcbceab3c240d0456a/68747470733a2f2f6465706c6f792e6379636c69632e6170702f627574746f6e2e737667)](https://deploy.cyclic.app/Hydrogen-Network/Hydrogen-hub)
 
 ```bash
 git clone https://github.com/Eternal-Network/Eternal-hub
