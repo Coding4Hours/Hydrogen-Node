@@ -231,23 +231,7 @@
         <input id="uv-search-engine" value="https://search.brave.com/search?q=%s" type="hidden"/>
         <input class="w3-xlarge" id="uv-address" type="text" placeholder="Enter Search Query or URL"/>
       </form>
-      <button id="byeblocker" class="button-3">Launch ByeBlocker</button>
-      <script>
-          var button = document.getElementById('byeblocker');
-        button.onclick = function() {
-    var link = prompt("Url?");
-    var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
-    fetch(proxy + link)
-      .then((response) => response.text())
-      .then((text) => document.write(text));
-    var all = document.getElementsByTagName("*");
-    for (var i = 0, max = all.length; i < max; i++) {
-      if (all[i].src) {
-        all[i].src = new URL(all[i].src, link).href;
-        all[i].src = proxy + all[i].src;
-      }
-    }
-      </script>
+      <a href="codetabs.html">Codetabs Version</a>
     </div>
     </div>
     <br>
