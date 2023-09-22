@@ -18,7 +18,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<h3 align="center">Eternal Box</h3>
+<h3 align="center">Hydrogen-hub</h3>
 
   <p align="center">
     Eternal Box is a hub for students who are bored at school!
