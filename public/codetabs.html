@@ -1,0 +1,23 @@
+<doctype html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+      <input id="url" 
+      <script>
+         var link = prompt("Url?");
+    var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
+    fetch(proxy + link)
+      .then((response) => response.text())
+      .then((text) => document.write(text));
+    var all = document.getElementsByTagName("*");
+    for (var i = 0, max = all.length; i < max; i++) {
+      if (all[i].src) {
+        all[i].src = new URL(all[i].src, link).href;
+        all[i].src = proxy + all[i].src;
+      }
+      </script>
+    </body>
+  </html>
