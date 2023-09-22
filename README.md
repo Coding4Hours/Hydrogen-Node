@@ -1,4 +1,4 @@
-<!-- PROJECT SHIELDS -->
+e<!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
 *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
@@ -7,11 +7,11 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors](https://img.shields.io/github/contributors/Eternal-Network/Eternal-hub.svg?style=for-the-badge)](https://github.com/Eternal-Network/Eternal-hub/graphs/contributors)
-[![Forks](https://img.shields.io/github/forks/Eternal-Network/Eternal-hub.svg?style=for-the-badge)](https://github.com/Eternal-Network/Eternal-hub/forks)
-[![Stargazers](https://img.shields.io/github/stars/Eternal-Network/Eternal-hub.svg?style=for-the-badge)](https://github.com/Eternal-Network/Eternal-hub/stargazers)
-[![Issues](https://img.shields.io/github/issues/Eternal-Network/Eternal-hub.svg?style=for-the-badge)](https://github.com/Eternal-Network/Eternal-hub/issues)
-[![MIT License](https://img.shields.io/github/license/Eternal-Network/Eternal-hub.svg?style=for-the-badge)](https://github.com/Eternal-Network/Eternal-hub/blob/master/LICENSE.txt)
+[![Contributors](https://img.shields.io/github/contributors/Hydrogen-Network/Hydrogen-hub.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-hub/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/Hydrogen-Network/Hydrogen-hub.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-hub/forks)
+[![Stargazers](https://img.shields.io/github/stars/Hydrogen-Network/Hydrogen-hub.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-hub/stargazers)
+[![Issues](https://img.shields.io/github/issues/Hydrogen-Network/Hydrogen-hub.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-hub/issues)
+[![MIT License](https://img.shields.io/github/license/Hydrogen-Network/Hydrogen-hub.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-hub/blob/master/LICENSE.txt)
 
 
 
@@ -21,11 +21,11 @@
 <h3 align="center">Hydrogen-hub</h3>
 
   <p align="center">
-    Eternal Box is a hub for students who are bored at school!
+    Hydrogen-hub is a hub for students who are bored at school!
     <br />
-    <a href="https://github.com/Eternal-Network/Eternal-hub/issues">Report Bug</a>
+    <a href="https://github.com/Hydrogenv-Network/Hydrogen-hub/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Eternal-Network/Eternal-hub/issues">Request Feature</a>
+    <a href="https://github.com/Hydrogen-Network/Hydrogen-hub/issues">Request Feature</a>
   </p>
 </div>
 
@@ -59,9 +59,9 @@
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Hydrogen-Network/Hydrogen-hub&branch=main&name=Ultraviolet-App)
 
 ```bash
-git clone https://github.com/Eternal-Network/Eternal-hub
+git clone https://github.com/Hydrogen-Network/Hydrogen-hub
 # clone the repo
-cd Eternal-hub
+cd Hydrogen-hub
 # open the folder with the files
 npm install
 # install npm
@@ -69,7 +69,7 @@ npm start
 # start the app
 ```
 
-[![Screenshot](https://raw.githubusercontent.com/Eternal-Network/Assets/main/Screenshot.jpeg)](https://eternal-network.com/Eternal-hub)
+[![Screenshot](https://raw.githubusercontent.com/Hydrogen-Network/Assets/main/Screenshot.jpeg)](https://Hydrogen-network.com/Hydrogen-hub)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,7 +118,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - blade_immovably193@simplelogin.com
 
-Project Link: [https://github.com/Eternal-Network/Eternal-hub](https://github.com/Eternal-Network/Eternal-hub)
+Project Link: [https://github.com/Hydrogen-Network/Hydrogen-hub](https://github.com/Hydrogen-Network/Hydrogen-hub)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
