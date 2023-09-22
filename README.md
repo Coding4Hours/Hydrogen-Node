@@ -1,4 +1,4 @@
-e<!-- PROJECT SHIELDS -->
+<!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
 *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
@@ -18,10 +18,10 @@ e<!-- PROJECT SHIELDS -->
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<h3 align="center">Hydrogen-hub</h3>
+<h3 align="center">Hydrogen Hub</h3>
 
   <p align="center">
-    Hydrogen-hub is a hub for students who are bored at school!
+    Hydrogen Hub is a hub for students who are bored at school!
     <br />
     <a href="https://github.com/Hydrogenv-Network/Hydrogen-hub/issues">Report Bug</a>
     ·
