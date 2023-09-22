@@ -1,3 +1,5 @@
+  const select = document.querySelector('select');
+
 function blob() {
   const e=(s)=>s.replace(/[<>'"]/g,(c)=>`\\u${('000'+c.charCodeAt(0).toString(16)).substr(-4)}`);
 const l=window.location.href;
@@ -62,7 +64,6 @@ window.onhashchange = () => {
       } catch {}
   }
 
-  const select = document.querySelector('select');
 
   select.addEventListener('change', event => {
     const option = event.target.value;
