@@ -203,8 +203,8 @@ body {
             <script>
     var link = getElementById('url');
     var proxy = 'https://api.codetabs.com/v1/proxy?quest=' + link;
-      </script>
-      <input class="w3-xlarge" id="url" placeholder='www.example.com' onkeydown='if(event.key==="Enter") { fetch(proxy + link)
+              async funtion go() {
+              fetch(proxy + link)
       .then((response) => response.text())
       .then((text) => document.write(text));
     var all = document.getElementsByTagName("*");
@@ -212,6 +212,9 @@ body {
       if (all[i].src) {
         all[i].src = new URL(all[i].src, link).href;
         all[i].src = proxy + all[i].src;
-      } }'/> 
+      }
+    }
+      </script>
+      <input class="w3-xlarge" id="url" placeholder='www.example.com' onkeydown='if(event.key==="Enter") go()'/> 
     </body>
   </html>
