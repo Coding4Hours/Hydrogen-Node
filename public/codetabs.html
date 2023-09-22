@@ -3,12 +3,25 @@
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        .w3-xlarge {
+        outline: none;
+        background: transparent;
+        border: 1px solid #6886ed;
+        padding: 0 10px;
+        border-radius: 6px;
+        height: 3.5rem;
+        width: 40rem;
+        margin: 10px;
+        color: white;
+    }
+      </style>
     </head>
     <body>
-      <input id="url" 
-      <script>
-         var link = prompt("Url?");
+            <script>
+    var link = getElementById('url');
     var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
+    async function go() {
     fetch(proxy + link)
       .then((response) => response.text())
       .then((text) => document.write(text));
@@ -18,6 +31,8 @@
         all[i].src = new URL(all[i].src, link).href;
         all[i].src = proxy + all[i].src;
       }
+    }
       </script>
+      <input class="w3-xlarge" id="url" placeholder='www.example.com' onkeydown='if(event.key==="Enter") go()'/> 
     </body>
   </html>
