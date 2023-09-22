@@ -74,13 +74,6 @@ npm start
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-### Links
-<p>
-  https://eternal-hub-offical.onrender.com/
-</p>
-
-
 ### Built With
 <pre>
 <ul>
@@ -91,19 +84,6 @@ npm start
   </pre>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] about:blank cloaking(also hosted at [https://5l6gqq.csb.app/](https://5l6gqq.csb.app/))
-- [x] Password-Protection(for when you panic)
-- [x] Unblocker
-
-See this [issue](https://github.com/Eternal-Network/Eternal-hub/issues/1) for a full list of proposed features.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
