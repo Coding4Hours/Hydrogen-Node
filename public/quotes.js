@@ -1,4 +1,5 @@
 quotes = [
+    "<span class="w3-large"><font size="+2.5">Made by students, for students :) </span>"
     "Highly creative splash text here.",
     "Very creative splash text here.",
     "2002 toyota corolla",
@@ -32,8 +33,6 @@ quotes = [
     "I'm not fat, I'm big boned!",
     "uh",
     "what",
-    "hey sysadmin, block this and your racist.",
-    "hey sysadmin, block this and you're racist.",
     "i am in your walls",
     "not your grandma",
     "<a href='https://www.rare1k.space/r/are' >your location</a>",
@@ -45,4 +44,4 @@ quotes = [
 "<a href='https://www.rare1k.space/r/are' >get rickrolled</a>",
 "<a href='https://www.rare1k.space/r/are' >Do <strong>you</strong> like Never Gonna Give You Up?</a>",
 ]
-    document.querySelector('q').innerHTML = quotes[Math.floor(Math.random() * quotes.length)]
+    document.querySelector('quote').innerHTML = quotes[Math.floor(Math.random() * quotes.length)]
