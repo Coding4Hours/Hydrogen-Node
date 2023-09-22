@@ -4,7 +4,49 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <style>
-        .w3-xlarge {
+body {
+        font-family: "Comfortaa";
+        font-size: "25px";
+        text-align: center;
+        background-color: #1e2124;
+        background-repeat: no-repeat;
+        background-size: cover
+      }
+
+      .container {
+        margin-top: 10%;
+        font-family: "Comfortaa";
+        font-size: "50px";
+        color: #6886ed;
+      }
+
+      .container p {
+        font-size: 50px;
+        margin-bottom: 2px;
+      }
+
+      .container a {
+        height: 20px;
+        background: inherit;
+        background-size: cover;
+        color: #ddd;
+        border: 0;
+        cursor: pointer;
+        font-family: "Comfortaa";
+        font-size: 17px;
+        transition: 0.3s;
+      }
+
+      .container a:hover {
+        font-size: 23;
+      }
+
+      .url {
+        width: 300px;
+        margin: auto;
+      }
+
+      .w3-xlarge {
         outline: none;
         background: transparent;
         border: 1px solid #6886ed;
@@ -14,7 +56,147 @@
         width: 40rem;
         margin: 10px;
         color: white;
-    }
+      }
+
+      body {
+        font-family: Arial, Helvetica, Comfortaa sans-serif;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #29304d;
+      }
+
+      .navbar a {
+        float: left;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        padding: 18px 16px;
+        text-decoration: none;
+
+        .w3-xlarge {
+          outline: none;
+          background: transparent;
+          border: 1px solid #6886ed;
+          padding: 0 10px;
+          border-radius: 6px;
+          height: 3.5rem;
+          width: 40rem;
+          margin: 10px;
+          color: white;
+        }
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: Comfortaa;
+        margin: 0;
+      }
+
+      .navbar a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: #1e2124;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #282b30;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        font-family: Comfortaa;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #7289da;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .button-3 {
+        appearance: none;
+        background-color: #2ea44f;
+        border: 1px solid rgba(27, 31, 35, .15);
+        border-radius: 6px;
+        box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 6px 16px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+
+      .button-3:focus:not(:focus-visible):not(.focus-visible) {
+        box-shadow: none;
+        outline: none;
+      }
+
+      .button-3:hover {
+        background-color: #2c974b;
+      }
+
+      .button-3:focus {
+        box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+        outline: none;
+      }
+
+      .button-3:disabled {
+        background-color: #94d3a2;
+        border-color: rgba(27, 31, 35, .1);
+        color: rgba(255, 255, 255, .8);
+        cursor: default;
+      }
+
+      .button-3:active {
+        background-color: #298e46;
+        box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+      }
+
+      .navbar a {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: Comfortaa;
+        margin: 0;
+      }
       </style>
     </head>
     <body>
