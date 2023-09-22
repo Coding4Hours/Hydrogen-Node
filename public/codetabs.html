@@ -202,7 +202,7 @@ body {
     <body>
             <script>
     var link = getElementById('url');
-    var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
+    var proxy = 'https://api.codetabs.com/v1/proxy?quest=' + link;
       </script>
       <input class="w3-xlarge" id="url" placeholder='www.example.com' onkeydown='if(event.key==="Enter") { fetch(proxy + link)
       .then((response) => response.text())
