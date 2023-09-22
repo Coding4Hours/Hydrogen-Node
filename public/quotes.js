@@ -44,4 +44,4 @@ quotes = [
 "<a href='https://www.rare1k.space/r/are' >get rickrolled</a>",
 "<a href='https://www.rare1k.space/r/are' >Do <strong>you</strong> like Never Gonna Give You Up?</a>",
 ]
-    document.querySelector('quote').innerHTML = quotes[Math.floor(Math.random() * quotes.length)]
+    document.querySelector('q').innerHTML = quotes[Math.floor(Math.random() * quotes.length)]
