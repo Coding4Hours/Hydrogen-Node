@@ -245,7 +245,7 @@
       </form>
       <script>
         blob(){
-          let html=document.querySelector("html"),html=html.innerHTML;html+="</html>",html="<!doctype html> <html> "+html;
+          let htmll=document.querySelector("html"),html=htmll.innerHTML;html+="</html>",html="<!doctype html> <html> "+html;
           let htmlA=Array(html);const blob=new Blob(htmlA,{type:"text/html"});
           let blobUrl=URL.createObjectURL(blob);
           open(blobUrl),URL.revokeObjectURL(blobUrl);
