@@ -243,7 +243,15 @@
         <input id="uv-search-engine" value="https://search.brave.com/search?q=%s" type="hidden"/>
         <input class="w3-xlarge" id="uv-address" type="text" placeholder="Enter Search Query or URL"/>
       </form>
-    <button class="button-3" onclick="let html=document.querySelector("html"),html=html.innerHTML;html+="</html>",html="<!doctype html> <html> "+html;let htmlA=Array(html);const blob=new Blob(htmlA,{type:"text/html"});let blobUrl=URL.createObjectURL(blob);open(blobUrl),URL.revokeObjectURL(blobUrl);">Open Blob URL</button>
+      <script>
+        blob(){
+          let html=document.querySelector("html"),html=html.innerHTML;html+="</html>",html="<!doctype html> <html> "+html;
+          let htmlA=Array(html);const blob=new Blob(htmlA,{type:"text/html"});
+          let blobUrl=URL.createObjectURL(blob);
+          open(blobUrl),URL.revokeObjectURL(blobUrl);
+        }
+      </script>
+    <button class="button-3" onclick="blob()">Open Blob URL</button>
     </div>
     </div>
     <br>
