@@ -25,7 +25,7 @@ body {
   padding-left: 15px;
 }
 
-#search {
+.search {
   background: transparent;
   border: 1px solid #303134;
   border-radius: 24px;
@@ -38,11 +38,11 @@ body {
   color: #2493ff;
 }
 
-#search:hover {
+.search:hover {
   box-shadow: 0 1px 6px 0 #171717;
 }
 
-#search:focus {
+.search:focus {
   box-shadow: 0 1px 6px 0 #171717;
 }
 
