@@ -19,7 +19,7 @@ const error = document.getElementById("uv-error");
  * @type {HTMLPreElement}
  */
 const errorCode = document.getElementById("uv-error-code");
-
+const frame = document.getElementById("ifr");
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
@@ -32,5 +32,5 @@ form.addEventListener("submit", async (event) => {
   }
 
   const url = search(address.value, searchEngine.value);
-  location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+  frame.src = __uv$config.prefix + __uv$config.encodeUrl(url);
 });
