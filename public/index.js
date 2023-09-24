@@ -1,4 +1,4 @@
-/**
+/*
  * @type {HTMLFormElement}
  */
 const form = document.getElementById("uv-form");
