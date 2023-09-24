@@ -34,3 +34,20 @@ form.addEventListener("submit", async (event) => {
   const url = search(address.value, searchEngine.value);
   frame.src = __uv$config.prefix + __uv$config.encodeUrl(url);
 });
+
+function fullscreen() {
+  var elem = document.getElementById("ifr")
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+function exit() {
+	document.getElementById("align").style.display = "none";
+	document.querySelector(".sidebar").style.display = "";
+	frame.src = "";
+}
