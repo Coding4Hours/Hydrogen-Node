@@ -18,7 +18,6 @@ const error = document.getElementById("uv-error");
  * @type {HTMLPreElement}
  */
 const errorCode = document.getElementById("uv-error-code");
-const frame = document.getElementById("ifr");
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
