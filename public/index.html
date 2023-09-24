@@ -3,10 +3,9 @@
   <head>
     <script src="uv/uv.bundle.js" defer></script>
     <script src="uv/uv.config.js" defer></script>
-    <script src="sw.js" defer></script>
+    <script src="register-sw.js" defer></script>
     <script src="search.js" defer></script>
     <script src="index.js" defer></script>
-    <script src="settings.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap" rel="stylesheet">
@@ -223,17 +222,7 @@
       .hidden {
       display: none;
       }
-      .frame {
-  border-radius: 5px;
-  background-color: white;
-  display: block;
-  margin: auto;
 
-  border: none;
-  
-  height: calc(100vh - 80px);
-  width: calc(100vw - 30px);
-}
     </style>
   </head>
   <body>
@@ -252,9 +241,6 @@
         <input id="uv-search-engine" value="https://search.brave.com/search?q=%s" type="hidden"/>
         <input class="w3-xlarge" id="uv-address" type="text" placeholder="Enter Search Query or URL"/>
       </form>
-      <p>
-        <button class="button-3" onclick="openPage('settings');">Open Settings</button>
-      </p>
         <a href='javascript: let htmll=document.querySelector("html"),html=htmll.innerHTML;html+="</html>",html="<!doctype html> <html> "+html;let htmlA=Array(html);const blob=new Blob(htmlA,{type:"text/html"});let blobUrl=URL.createObjectURL(blob);open(blobUrl),URL.revokeObjectURL(blobUrl); window.location.replace("https://google.com/");' class="button-3" >Blob URL</a>
         <a class="button-3" href='javascript: (function () {var url = window.location.href; var urlObj = new window.URL(window.location.href); win = window.open(); win.document.body.style.margin = "0"; win.document.body.style.height = "100vh"; var iframe = win.document.createElement("iframe"); iframe.style.border = "none"; iframe.style.width = "100%"; iframe.style.height = "100%"; iframe.style.margin = "0"; iframe.referrerpolicy = "no-referrer"; iframe.allow = "fullscreen"; iframe.src = url.toString(); win.document.body.appendChild(iframe); window.location.replace("https://google.com/"); })();'>about:blank</a>
         <a class="button-3" href="javascript: var url=window.location.href; var myWindow1 = window.open('',height='300',width='500');  myWindow1.document.write('<iframe src=url></iframe>'); window.location.replace('https://google.com/');">Popup</a>
