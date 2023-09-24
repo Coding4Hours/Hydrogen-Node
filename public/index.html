@@ -220,6 +220,11 @@
       #scrn {
         margin-left: -1000000px
       }
+      
+      .hidden {
+      display: none;
+      }
+
     </style>
   </head>
   <body>
@@ -238,7 +243,7 @@
         <input id="uv-search-engine" value="https://search.brave.com/search?q=%s" type="hidden"/>
         <input class="w3-xlarge" id="uv-address" type="text" placeholder="Enter Search Query or URL"/>
       </form>
-    <button class="button-3" onclick="javascript: let htmll=document.querySelector("html"),html=htmll.innerHTML;html+="</html>",html="<!doctype html> <html> "+html;let htmlA=Array(html);const blob=new Blob(htmlA,{type:"text/html"});let blobUrl=URL.createObjectURL(blob);open(blobUrl),URL.revokeObjectURL(blobUrl);">Open Blob URL</button>
+    <button class="button-3" onclick="let html=document.querySelector("html"),html=html.innerHTML;html+="</html>",html="<!doctype html> <html> "+html;let htmlA=Array(html);const blob=new Blob(htmlA,{type:"text/html"});let blobUrl=URL.createObjectURL(blob);open(blobUrl),URL.revokeObjectURL(blobUrl);">Open Blob URL</button>
     </div>
     </div>
     <br>
