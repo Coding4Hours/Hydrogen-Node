@@ -8,26 +8,6 @@
  * @returns {string} Fully qualified URL
  */
 
-const frame = document.querySelector("iframe")
-const div = document.querySelector(".center-container")
-frame.style.display = "none"
-const input = document.querySelector("input");
-input.addEventListener("keyup", function(event) {
-    if (event.key === "Enter") {
-        div.style.display = 'none'
-        frame.style.display = 'block'
-        document.querySelector("iframe").src = __uv$config.prefix + __uv$config.encodeUrl(search(input.value));
-
-    }
-});
-
-var params = new URLSearchParams(window.location.search)
-console.log("Searching for " + params.get("q"))
-if (params.get("q")) {
-  div.style.display = 'none'
-  frame.style.display = 'block'
-  document.querySelector("iframe").src = __uv$config.prefix + __uv$config.encodeUrl(search(params.get("q")));
-}
 
 function search(input, template) {
   try {
