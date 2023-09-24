@@ -32,6 +32,7 @@ form.addEventListener("submit", async (event) => {
   }
 
   const url = search(address.value, searchEngine.value);
-  frame.src = __uv$config.prefix + __uv$config.encodeUrl(url);
+  var proxified = __uv$config.prefix + __uv$config.encodeUrl(url);
+  frame.src = proxified;
 });
 
