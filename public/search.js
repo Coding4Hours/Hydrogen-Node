@@ -1,5 +1,3 @@
-
-
 "use strict";
 /**
  *
@@ -7,8 +5,6 @@
  * @param {string} template Template for a search query.
  * @returns {string} Fully qualified URL
  */
-
-
 function search(input, template) {
   try {
     // input is a valid URL:
