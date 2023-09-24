@@ -4,422 +4,68 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A unique site for combating web filters and regaining internet freedom">
-    <title>Browser</title>
+    <title>Riptide</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-    new Crate({
-        server: '1144432374063583302', // Unblocking It
-        channel: '1144432374520754204' // #💬︱general
-    })
-    </script>
     <style>
-      body {
-        font-family: "Comfortaa";
-        font-size: "25px";
-        text-align: center;
-        background-color: #1e2124;
-        background-repeat: no-repeat;
-        background-size: cover
-      }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-      .container {
-        margin-top: 10%;
-        font-family: "Comfortaa";
-        font-size: "50px";
-        color: #6886ed;
-      }
+* {
+font-family: Roboto;
+}
 
-      .container p {
-        font-size: 50px;
-        margin-bottom: 2px;
-      }
-
-      .container a {
-        height: 20px;
-        background: inherit;
-        background-size: cover;
-        color: #ddd;
-        border: 0;
-        cursor: pointer;
-        font-family: "Comfortaa";
-        font-size: 17px;
-        transition: 0.3s;
-      }
-
-      .container a:hover {
-        font-size: 23;
-      }
-
-      .url {
-        width: 300px;
-        margin: auto;
-      }
-
-      .w3-xlarge {
-        outline: none;
-        background: transparent;
-        border: 1px solid #6886ed;
-        padding: 0 10px;
-        border-radius: 6px;
-        height: 3.5rem;
-        width: 40rem;
-        margin: 10px;
-        color: white;
-      }
-
-      body {
-        font-family: Arial, Helvetica, Comfortaa sans-serif;
-      }
-
-      .navbar {
-        overflow: hidden;
-        background-color: #29304d;
-      }
-
-      .navbar a {
-        float: left;
-        font-size: 15px;
-        color: white;
-        text-align: center;
-        padding: 18px 16px;
-        text-decoration: none;
-
-        .w3-xlarge {
-          outline: none;
-          background: transparent;
-          border: 1px solid #6886ed;
-          padding: 0 10px;
-          border-radius: 6px;
-          height: 3.5rem;
-          width: 40rem;
-          margin: 10px;
-          color: white;
-        }
-      }
-
-      .dropdown {
-        float: left;
-        overflow: hidden;
-      }
-
-      .dropdown .dropbtn {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: Comfortaa;
-        margin: 0;
-      }
-
-      .navbar a:hover,
-      .dropdown:hover .dropbtn {
-        background-color: #1e2124;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #282b30;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        font-family: Comfortaa;
-      }
-
-      .dropdown-content a {
-        float: none;
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-
-      .dropdown-content a:hover {
-        background-color: #7289da;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .button-3 {
-        appearance: none;
-        background-color: #2ea44f;
-        border: 1px solid rgba(27, 31, 35, .15);
-        border-radius: 6px;
-        box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-block;
-        font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 20px;
-        padding: 6px 16px;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        vertical-align: middle;
-        white-space: nowrap;
-      }
-
-      .button-3:focus:not(:focus-visible):not(.focus-visible) {
-        box-shadow: none;
-        outline: none;
-      }
-
-      .button-3:hover {
-        background-color: #2c974b;
-      }
-
-      .button-3:focus {
-        box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-        outline: none;
-      }
-
-      .button-3:disabled {
-        background-color: #94d3a2;
-        border-color: rgba(27, 31, 35, .1);
-        color: rgba(255, 255, 255, .8);
-        cursor: default;
-      }
-
-      .button-3:active {
-        background-color: #298e46;
-        box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-      }
-
-      .navbar a {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: Comfortaa;
-        margin: 0;
-      }
-
-      #scrn {
-        margin-left: -1000000px
-      }
-      
-      .hidden {
-      display: none;
-      }
-
-        #web {
-  position: fixed;
-  top: 77px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: none;
-  z-index: 10;
+body {
   background: #202124;
 }
 
-.urlbar {
-  background: #2493ff;
-  height: 37px;
-  position: fixed;
-  top: 40px;
-  left: 0;
-  right: 0;
-  display: flex;
-  user-select: none;
+.title {
+  margin: 0;
+  margin-top: 220px;
+  font-size: 80px;
+  color: #2493ff;
 }
 
-.search {
-  background: #2493ff;
-  color: black;
-  height: 26px;
-  outline: none;
-  width: 100%;
-  padding-left: 10px;
-  transition: 0.3s;
-  font-size: 15px;
-  border: 2px solid black;
-  border-radius: 25px;
-  margin: 2px;
+.searchbox {
+  margin-top: 50px;
 }
 
-.material-icons-outlined {
-  font-family: Material Icons;
+.searchicon {
+  position: absolute;
+  margin-top: 15px;
+  padding-left: 15px;
 }
 
-.button {
-  border: 0;
-  font-size: 20px;
-  color: black;
+#search {
   background: transparent;
-  cursor: pointer;
-  border-radius: 50%;
-  height: 26px;
-  width: 26px;
-  padding: 0;
-  transition: 0.3s;
-  line-height: 26px;
+  border: 1px solid #303134;
+  border-radius: 24px;
+  height: 46px;
+  width: 584px;
+  outline: none;
+  padding-left: 47px;
+  font-size: 16px;
+  padding-bottom: 2px;
+  color: #2493ff;
 }
 
-#reload {
-  margin-right: 2.5px;
-  margin-left: 2.5px;
+#search:hover {
+  box-shadow: 0 1px 6px 0 #171717;
 }
 
-#forward {
-  margin-right: 2.5px;
-  margin-left: 2.5px;
+#search:focus {
+  box-shadow: 0 1px 6px 0 #171717;
 }
 
-#back {
-  margin-right: 2.5px;
-  margin-left: 5px;
-}
-
-#home {
-  margin-right: 5px;
-  margin-left: 2.5px;
+::-webkit-scrollbar {
+  display: none;
 }
 
 ::placeholder {
-  color: black;
+  color: #2493ff;
 }
-
-.search:focus::placeholder {
-  color: transparent;
-}
-
-.navcontrols {
-  display: flex;
-  align-items: center;
-  background: #2493ff;
-  margin-bottom: 5px;
-  height: 37px;
-}
-
-.morebtn {
-  background: #2493ff;
-  color: black;
-  height: 37px;
-  outline: none;
-  border: none;
-  width: 28px;
-  transition: 0.3s;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: large;
-}
-
-#more {
-  position: fixed;
-  top: 82px;
-  right: 5px;
-  background: #2493ff;
-  width: 200px;
-  height: 292px;
-  z-index: 15;
-  border-radius: 5px;
-}
-
-.moreitem {
-  color: black;
-  padding: 5px;
-  text-align: left;
-  cursor: pointer;
-}
-
-.homemore {
-  border-radius: 5px 5px 0 0;
-}
-
-.homeexit {
-  border-radius: 0 0 5px 5px;
-}
-
-.moreitem:hover {
-  background: #5db0ff;
-}
-
-#tabs {
-  display: flex;
-  position: fixed;
-  right: 5px;
-  left: 5px;
-  top: 5px;
-}
-
-.tab {
-  background: darkslategray;
-  margin: 5px;
-  width: 200px;
-  height: 30px;
-  color: #9ca1a7;
-  line-height: 30px;
-  border-radius: 5px 5px 0 0;
-  user-select: none;
-  position: relative;
-  overflow: hidden;
-}
-
-.closetab {
-  display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
-  height: 30px;
-  width: 20px;
-  text-align: center;
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  border-radius: 0 5px 5px 0;
-  background: darkslategray;
-  font-size: 15px;
-}
-
-.newtab {
-  user-select: none;
-  background: #2493ff;
-  margin: 5px;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  cursor: pointer;
-  border-style: initial;
-  color: black;
-  flex-shrink: 0;
-  font-size: 15px;
-  line-height: 25px;
-}
-
-.fa-xmark {
-  height: 100%;
-  line-height: 30px;
-}
-
-.activetab {
-  background: #2493ff;
-  color: black;
-}
-
-.tabtext {
-  display: inline-block;
-  width: 100%;
-  padding-left: 5px;
-  box-sizing: border-box;
-}
-
     </style>
 </head>
 <body>
@@ -460,6 +106,33 @@
 
 <iframe width="100%" height="732px" src="browser/index.html" id="web" onLoad="updateweb()" sandbox="allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-modals"></iframe>
 
-<script src="js/browser.js"></script>
+<script src="index.js"></script>
+    <script>
+        document.addEventListener('keydown', function(e){
+//Ctrl + Y: New Tab
+if (e.ctrlKey && e.keyCode == 89) {
+window.parent.newtab()
+//Ctrl + Q: Close Tab
+} else if (e.ctrlKey && e.keyCode == 81) {
+window.parent.removetab(window.parent.currenttab())
+}
+});
+
+//Ctrl + P: Print
+jQuery(document).bind("keyup keydown", function(e){
+if(e.ctrlKey && e.keyCode == 80){
+print()
+return false;
+}
+});
+
+//Ctrl + R: Reload
+jQuery(document).bind("keyup keydown", function(e){
+if(e.ctrlKey && e.keyCode == 82){
+window.location.reload()
+return false;
+}
+});
+    </script>
 </body>
 </html>
