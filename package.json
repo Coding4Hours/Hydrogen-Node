@@ -1,5 +1,5 @@
 {
-  "name": "eternal-Hub",
+  "name": "Hydrogen-Hub",
   "version": "3.0.0",
   "description": "Proxy site by Coding4hours",
   "type": "module",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eternal-Network/Eternal-hub.git"
+    "url": "git+https://github.com/Hydrogen-Network/Hydrogen-hub.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Eternal-Network/Eternal-hub/issues"
+    "url": "https://github.com/Hydrogen-Network/Hydrogen-hub/issues"
   },
-  "homepage": "https://github.com/Eternal-Network/Eternal-hub#readme",
+  "homepage": "https://github.com/Hydrogen-Network/Hydrogen-hub#readme",
   "dependencies": {
     "@titaniumnetwork-dev/ultraviolet": "^1.0.5",
     "@tomphttp/bare-server-node": "^1.2.2",
