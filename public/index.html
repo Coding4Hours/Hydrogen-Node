@@ -223,6 +223,24 @@
       display: none;
       }
 
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid red;
+}
+
+.navbar a.active {
+  border-bottom: 3px solid red;
+}
     </style>
   </head>
   <body>
@@ -231,7 +249,6 @@
     </div>
     <title>Hydrogen Hub</title>
     
-      <!-- particles.js container -->
     <div class="container" id="particles-js">
     <div>  
     <span class="w3-large"> <font size="+20"><b>Hydrogen Hub</b></font><br></span>
