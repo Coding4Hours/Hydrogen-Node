@@ -1,4 +1,4 @@
-var eventKey = localStorage.getItem("eventKey") || prompt('Whwat panic key do you want?");
+var eventKey = localStorage.getItem("eventKey") || prompt("What panic key do you want?");
 var panicLink = localStorage.getItem("panicLink") || "https://classroom.google.com/";
 
 document.addEventListener("keydown", function(event) {
