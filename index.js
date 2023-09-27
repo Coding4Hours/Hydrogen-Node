@@ -5,21 +5,11 @@ import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
 import { join, dirname } from "node:path";
 import { hostname } from "node:os";
 import { fileURLToPath } from "url";
-import RateLimit from "express-rate-limit";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const bare = createBareServer("/bare/");
 const app = express();
-
-// set up rate limiter: maximum of five requests per minute
-var limiter = RateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // max 100 requests per windowMs
-});
-
-// apply rate limiter to all requests
-app.use(limiter);
 
 var publicPath = __dirname + "/public"
 
