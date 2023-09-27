@@ -272,6 +272,27 @@
             display:none;
         }
     }
+      .shaking:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
     </style>
         <title>Hydrogen Hub</title>
   </head>
@@ -291,14 +312,16 @@
 
     }
     setTimeout(fade,1200);
+      var x = "Is the browser online? " + navigator.onLine;
+      if(x == false) {
+        document.write('<h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1>');
+      }
     </script>
     <div class="navbar">
       <a href="/">Home</a>
     </div>
-    
     <div class="container" id="particles-js">
-    <span class="w3-large"> <font size="+20"><b>Hydrogen Hub</b></font><br></span>
-      <img src="hydro.png">
+      <img class="shaking" src="hydro.png">
       <h3 id="splashtext"></h3>
       <form id="uv-form" class="flex-center">
         <input id="uv-search-engine" value="https://search.brave.com/search?q=%s" type="hidden"/>
