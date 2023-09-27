@@ -39,8 +39,7 @@ var splashtexts = [
     "abcdefg",
     "No one will believe you",
     "oh admins!"
-    "🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧",
-      "gooooooooooodbye",
+    "gooooooooooodbye",
   "You're a real jerk!",
   "w h a t",
   "what the dog doin?",
@@ -125,7 +124,7 @@ var splashtexts = [
   "I'm not a Nebelung!",
   "Powered by 128 Gigs of RAM!",
   "Powered by 1 Gig of RAM!",
-      "Are you gay?",
+    "Are you gay?",
   "Keep it halal bro",
   "Your momma jokes are cringe",
   "Now with a new splash!",
