@@ -4,4 +4,6 @@ services:
     name: webdis
     runtime: node
     branch: main
-    rootDir: /public
+    rootDir: public
+    buildCommand: npm install
+    startCommand: npm start
