@@ -52,10 +52,12 @@
 
 <!-- GETTING STARTED -->
 ## Deployment
+there are two deploy on render buttons one for just a web service and one for using blueprints
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen-hub/)
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/Hydrogen-Network/Hydrogen-hub) 
 [![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Hydrogen-Network/Hydrogen-hub)
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/Hydrogen-Network/Hydrogen-hub)
+[![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/button/remade/render.dvg)](https://dashboard.render.com/blueprint/new?repo=https://github.com/Hydrogen-Network/Hydrogen-hub)
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Hydrogen-Network/Hydrogen-hub&branch=main&name=Ultraviolet-App)
 
 ```bash
