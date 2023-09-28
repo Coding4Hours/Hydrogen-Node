@@ -1,0 +1,7 @@
+services:
+  # A Node web service
+  - type: web
+    name: webdis
+    runtime: node
+    branch: main
+    rootDir: /public
