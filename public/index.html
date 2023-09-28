@@ -322,7 +322,7 @@
     </div>
     <div class="container" id="particles-js">
       <img class="shaking" src="hydro.png">
-      <h3 id="splashtext"></h3>
+      <q id="splashtext"></q>
       <form id="uv-form" class="flex-center">
         <input id="uv-search-engine" value="https://search.brave.com/search?q=%s" type="hidden"/>
         <input class="w3-xlarge" id="uv-address" type="text" placeholder="Enter Search Query or URL"/>
@@ -340,6 +340,17 @@
     <script src="js/panic.js"></script>
     <script src="js/splashtexts.js"></script>
   <script>
+    var i = 0;
+    var txt = 'Made by students, for students:)';
+    var speed = 50;
+    typeWriter()
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("splashtext").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
         console.log('%cHold Up!', 'font-weight: bold; font-size: 20px; color: red; font-size: 18px;');
         console.log('%cIf someone told you to copy/paste something here, you have an 11/10 chance you\'re being scammed.', 'font-weight: bold; color: red; font-size: 18px;');
     </script>
