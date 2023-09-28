@@ -34,14 +34,5 @@ form.addEventListener("submit", async (event) => {
   const url = search(address.value, searchEngine.value);
   var uvurl = window.location.href +  __uv$config.prefix + __uv$config.encodeUrl(url);
   var iframe = document.createElement('iframe');
-  iframe.setAttribute('src', uvurl);
-  iframe.style.position = 'fixed';
-  iframe.style.top = '50%';
-  iframe.style.left = '50%';
-  iframe.style.transform = 'translate(-50%, -50%)';
-  iframe.style.border = '8px solid Blue';
-  iframe.style.width = '100%';
-  iframe.style.height = '100%';
-  iframe.style.zIndex = '9999';
-
+  iframe.src = uvurl;
 });
