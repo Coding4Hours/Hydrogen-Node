@@ -53,6 +53,8 @@
 <!-- GETTING STARTED -->
 ## Deployment
 there are two deploy on render buttons one for just a web service and one for using blueprints.  
+<br>
+
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen-hub/)
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/Hydrogen-Network/Hydrogen-hub) 
 [![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Hydrogen-Network/Hydrogen-hub)
