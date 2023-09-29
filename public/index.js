@@ -62,20 +62,5 @@ form.addEventListener("submit", async (event) => {
 
             document.body.appendChild(x);
 
-
-            var open = document.createElement('img');
-            open.style.cursor="pointer";
-            open.style.position = "absolute";
-            open.style.width = "50px";
-            open.style.height = "50px";
-            open.src = "https://ima.minecraftpotato.com/img/open.png";
-            open.style.zIndex = "99999999999999999999";
-            open.style.right = "65px";
-            open.style.top = "1%";
-            open.onclick = function() {
-                if (document.getElementById("iframe").contentWindow.location.href!="about:blank"){
-                    window.open(document.getElementById("iframe").contentWindow.location.href);
-                }
-            document.body.appendChild(open);
 //location.href = __uv$config.prefix + __uv$config.encodeUrl(url);;
 });
