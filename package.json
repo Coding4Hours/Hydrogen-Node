@@ -24,6 +24,10 @@
   "dependencies": {
     "@titaniumnetwork-dev/ultraviolet": "^1.0.5",
     "@tomphttp/bare-server-node": "^1.2.2",
-    "express": "^4.18.2"
+    "@titaniumnetwork-dev/ultraviolet": "^1.0.5",
+    "@tomphttp/bare-server-node": "^1.2.2",
+    "express": "^4.18.2",
+    "express-basic-auth": "^1.2.1",
+    "express-rate-limit": "^7.0.2"
   }
 }
