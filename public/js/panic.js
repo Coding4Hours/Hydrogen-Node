@@ -1,12 +1,11 @@
 var eventKey = localStorage.getItem("eventKey") || prompt("What panic key do you want?"");
 var panicLink = localStorage.getItem("panicLink") || prompt("What panic link do you want?"";
-
 document.addEventListener("keydown", function(event) {
   if (event.key === eventKey) {
     if (window.self !== window.top) {
-      window.parent.location.href = panicLink;
+      window.parent.window.location.replace(panicLink);
     } else {
-      window.location.href = panicLink;
+      window.parent.window.location.replace(panicLink);
     }
   }
 });
