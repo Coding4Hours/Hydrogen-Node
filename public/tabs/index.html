@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Google</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <meta name="description" content="Chrome-style Browser in HTML/CSS/JS.">
+  <link href="index.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script>if (location.hash === "#dark") document.documentElement.classList.add("dark");</script>
+  <script src="../js/draggabilly.js" type="module"></script>
+  <script src="../uv/uv.bundle.js" type="module"></script>
+  <script src="../uv/uv.config.js" type="module"></script>
+  <script src="../js/index.js" type="module"></script>
+  <link href="../css/browser.css" rel="stylesheet">
+  <link href="../css/chrome-tabs.css" rel="stylesheet">
+
+</head>
+
+<body class="dark-theme">
+
+  <!-- Tab bar -->
+  <div class="chrome-tabs" style="--tab-content-margin: 9px">
+    <div class="chrome-tabs-content">
+    </div>
+    <div class="new-tab-button-wrapper">
+      <button class="new-tab-button">&#65291;</button>
+    </div>
+    <div class="chrome-tabs-bottom-bar"></div>
+  </div>
+
+  <!-- Url bar -->
+  <div class="browser-bar">
+
+    <div id="pageBack">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill-rule="evenodd"
+        class="browser-bar-btn browser-bar-btn-disabled" viewBox="0 0 32 32">
+        <path stroke-width="0px" stroke-linecap="round" shape-rendering="geometricPrecision"
+          d="M 4.22 14.03 C 3.53 14.15 3 14.77 3 15.5 C 3 16.25 3.53 16.86 4.24 16.98 L 4.02 17.19 L 14.36 27.51 C 14.65 27.81 15.05 28 15.5 28 C 16.33 28 17 27.33 17 26.5 C 17 26.05 16.8 25.65 16.49 25.38 L 16.55 25.32 L 8.22 17 L 27.51 17 C 28.33 17 29 16.33 29 15.5 C 29 14.67 28.33 14 27.51 14 L 8.2 14 L 16.55 5.66 C 16.81 5.34 17 4.94 17 4.5 C 17 3.68 16.33 3 15.5 3 C 15.06 3 14.66 3.2 14.39 3.5 L 14.36 3.47 L 4 13.81 Z">
+        </path>
+      </svg>
+    </div>
+
+    <div style="height: 1px; width: 5px;"></div>
+
+    <div id="pageForward">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill-rule="evenodd"
+        class="browser-bar-btn browser-bar-btn-disabled" viewBox="0 0 32 32">
+        <path stroke-width="0px" stroke-linecap="round" shape-rendering="geometricPrecision"
+          d="M 27.78 14.03 C 28.47 14.15 29 14.77 29 15.5 C 29 16.25 28.47 16.86 27.76 16.98 L 27.98 17.19 L 17.64 27.51 C 17.35 27.81 16.95 28 16.5 28 C 15.67 28 15 27.33 15 26.5 C 15 26.05 15.2 25.65 15.51 25.38 L 15.45 25.32 L 23.78 17 L 4.49 17 C 3.67 17 3 16.33 3 15.5 C 3 14.67 3.67 14 4.49 14 L 23.8 14 L 15.45 5.66 C 15.19 5.34 15 4.94 15 4.5 C 15 3.68 15.67 3 16.5 3 C 16.94 3 17.34 3.2 17.61 3.5 L 17.64 3.47 L 28 13.81 Z">
+        </path>
+      </svg>
+    </div>
+
+    <div style="height: 1px; width: 5px;"></div>
+
+    <div id="pageReload">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill-rule="evenodd"
+        class="browser-bar-btn browser-bar-btn-enabled" viewBox="0 0 32 32">
+        <path stroke-width="0px" stroke-linecap="round" shape-rendering="geometricPrecision"
+          d="M 25.1 20.15 L 25.08 20.14 C 23.51 23.59 20.04 26 16 26 C 10.48 26 6 21.52 6 16 C 6 10.48 10.48 6 16 6 C 19.02 6 21.72 7.34 23.55 9.45 L 23.55 9.45 L 19 14 L 25.8 14 L 28.83 14 L 30 14 L 30 3 L 25.67 7.33 C 23.3 4.67 19.85 3 16 3 C 8.82 3 3 8.82 3 16 C 3 23.18 8.82 29 16 29 C 21.27 29 25.8 25.86 27.84 21.34 C 27.96 21.13 28.03 20.88 28.03 20.61 C 28.03 19.78 27.36 19.11 26.53 19.11 C 25.87 19.11 25.3 19.55 25.1 20.15 Z">
+        </path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill-rule="evenodd"
+        class="browser-bar-btn browser-bar-btn-enabled" viewBox="0 0 32 32">
+
+      </svg>
+    </div>
+    <div style="height: 1px; width: 8px;"></div>
+
+    <div class="addressbar">
+      <div style="height: 1px; width: 5px;"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill-rule="evenodd"
+        class="browser-bar-btn addressbar-btn" viewBox="0 0 20 20">
+        <path stroke-width="0px" stroke-linecap="round" shape-rendering="geometricPrecision"
+          d="M 9 14 h 2 v -4 H 9 v 4 Z m 1 -12 c -4.42 0 -8 3.58 -8 8 c 0 4.42 3.58 8 8 8 c 4.42 0 8 -3.58 8 -8 c 0 -4.42 -3.58 -8 -8 -8 Z m 0 14 c -3.31 0 -6 -2.69 -6 -6 c 0 -3.31 2.69 -6 6 -6 c 3.31 0 6 2.69 6 6 c 0 3.31 -2.69 6 -6 6 Z M 9 8 h 2 V 6 H 9 v 2 Z">
+        </path>
+      </svg>
+      <form style="color: #000000;">
+        <input class="addressbar-urlbar" id="urlbar" spellcheck="false" style="color: #000000;">
+      </form>
+    </div>
+
+    <div style="height: 1px; width: 5px;"></div>
+
+    <div id="pageOpen">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill-rule="evenodd"
+        class="browser-bar-btn browser-bar-btn-disabled" viewBox="0 0 48 48">
+        <path stroke-width="0px" stroke-linecap="round" shape-rendering="geometricPrecision"
+          d="M 38 38 H 10 V 10 h 14 V 6 H 10 c -2.21 0 -4 1.79 -4 4 v 28 c 0 2.21 1.79 4 4 4 h 28 c 2.21 0 4 -1.79 4 -4 V 24 h -4 v 14 Z M 28 6 v 4 h 7.17 L 15.51 29.66 l 2.83 2.83 L 38 12.83 V 20 h 4 V 6 H 28 Z">
+        </path>
+      </svg>
+    </div>
+
+  </div>
+
+  <!-- Content -->
+  <div class="browser-tab-content">
+  </div>
+  <script src="uv/uv.bundle.js"></script>
+  <script src="uv/uv.config.js"></script>
+  <script src="index.js"></script>
+  <script src="update.js"></script>
+
+
+</body>
+
+</html>

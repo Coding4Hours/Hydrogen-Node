@@ -1,0 +1,224 @@
+:root {
+  --light-browser-background: #fff;
+  --dark-browser-background: #323639;
+  --light-addressbar-background: #F1F3F4;
+  --dark-addressbar-background: #202124;
+  --light-addressbar-select: #9cc3f5;
+  --dark-addressbar-select: #1655B2;
+  --light-addressbar-btn-enabled: #5f6368;
+  --dark-addressbar-btn-enabled: #babcbe;
+  --light-addressbar-btn-hover: #eee;
+  --dark-addressbar-btn-hover: #3e454a;
+  --light-addressbar-btn-active: #d8d8d8;
+  --dark-addressbar-btn-active: #3e454a;
+  --light-addressbar-btn-disabled: #babcbe;
+  --dark-addressbar-btn-disabled: #5f6368;
+  --light-text-color:  #000000;
+  --dark-text-color: #f1f3f4;
+  --browser-icon-color: #5f6368;
+  --gray-text: #555;
+  --gray-border: #777;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  vertical-align: baseline;
+}
+
+#root,
+body,
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+.dark {
+  background: var(--dark-browser-background);
+}
+
+.browser-bar {
+  align-items: center;
+  background-color: var(--light-browser-background);
+  border-bottom: 1px solid #d4d4d4;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  height: 36px;
+  padding: 4px 15px;
+}
+
+.dark .browser-bar {
+  border-bottom: 1px solid #494f54;
+}
+
+.dark .browser-bar {
+  background: var(--dark-browser-background);
+}
+
+.browser-bar-btn {
+  fill: var(--light-addressbar-btn-enabled);
+  stroke: var(--light-addressbar-btn-enabled);
+  border-radius: 50%;
+  height: 20px;
+  padding: 6px;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.dark .browser-bar-btn {
+  fill: var(--dark-addressbar-btn-enabled);
+  stroke: var(--dark-addressbar-btn-enabled);
+}
+
+.browser-bar-btn-enabled:hover {
+  background-color: var(--light-addressbar-btn-hover);
+}
+
+.dark .browser-bar-btn-enabled:hover {
+  background-color: var(--dark-addressbar-btn-hover);
+}
+
+.browser-bar-btn-enabled:active {
+  background-color: var(---light-addressbar-btn-active);
+}
+
+.dark .browser-bar-btn-enabled:active {
+  background-color: var(---dark-addressbar-btn-active);
+}
+
+.browser-bar-btn-disabled {
+  fill: var(--light-addressbar-btn-disabled);
+  stroke: var(--light-addressbar-btn-disabled);
+}
+
+.dark .browser-bar-btn-disabled {
+  fill: var(--dark-addressbar-btn-disabled);
+  stroke: var(--dark-addressbar-btn-disabled);
+}
+
+.addressbar {
+  color: var(--light-text-color);
+  background: var(--light-addressbar-background);
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  flex: 1 1;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  height: 32px;
+  min-width: 0;
+}
+
+.dark .addressbar {
+  color:var(--dark-text-color);
+  background: var(--dark-addressbar-background);
+}
+
+.addressbar-btn:hover {
+  background-color: #dcdee0;
+}
+
+.dark .addressbar-btn:hover {
+  background-color: #2b3033;
+}
+
+.addressbar-btn:active {
+  background-color: #dcdee0;
+}
+
+.dark .addressbar-btn:active {
+  background-color: #2b3033;
+}
+
+.addressbar-urlbar {
+  background-color: transparent;
+  border: none;
+  flex: 1 1;
+  font-size: 16px;
+  min-width: 0;
+  outline: none;
+  overflow: hidden;
+  padding-right: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.addressbar-urlbar::selection {
+  background-color: var(--light-addressbar-select);
+  height: 28px;
+}
+
+.dark .addressbar-urlbar::selection {
+  background-color: var(--dark-addressbar-select);
+}
+
+.addressbar-grey {
+  color: grey;
+}
+
+.addressbar-menu-item {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 15px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.addressbar-menu-item-icon-wrapper {
+  margin-right: 20px;
+  width: 20px;
+}
+
+.addressbar-menu-item-icon {
+  fill: var(--light-addressbar-btn-enabled);
+  height: 20px;
+  width: 20px;
+}
+
+.dark .addressbar-menu-item-icon {
+  fill: var(--dark-addressbar-btn-enabled);
+}
+
+.addressbar-menu-item p {
+  margin: 12px 0;
+}
+
+.addressbar-menu {
+  align-self: flex-start;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  outline: none;
+  overflow: hidden;
+  padding-bottom: 10px;
+  position: relative;
+  top: -4px;
+  white-space: nowrap;
+  z-index: 100;
+}
+
+.addressbar-menu input {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  height: 30px;
+  outline: none;
+  width: 100%;
+}
+
+.browser-tab-content-iframe {
+  display: none;
+  border: none;
+  height: calc(100vh - 91px);
+  width: 100%;
+}
+
+.browser-tab-content-iframe[active] {
+  display: block;
+}
