@@ -326,9 +326,9 @@
     <div class="container" id="particles-js">
       <img class="shaking" src="hydro.png">
       <br>
-      <q id="splash"></q>
+      <p id="splash"></p>
       <script>
-              fetch('js/splash.json')
+        fetch('./js/splash.json')
         .then(res => res.json())
         .then(data => {
           document.querySelector("#splash").innerHTML = data[Math.floor(Math.random() * data.length)]
