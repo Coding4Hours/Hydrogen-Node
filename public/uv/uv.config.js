@@ -2,7 +2,9 @@
 
 self.__uv$config = {
     prefix: "/hydrogen-uv/",
-    bare: "/bare/",
+    bare: [
+      "https://tomp.app",
+    ],  
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: "/uv/uv.handler.js",
