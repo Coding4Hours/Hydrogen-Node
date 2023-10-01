@@ -31,6 +31,7 @@ form.addEventListener("submit", async (event) => {
 		throw err;
 	}
 
+	/*
 	const url = search(address.value, searchEngine.value);
 	var white = document.createElement('img');
 	white.style.cursor = "pointer";
@@ -82,5 +83,7 @@ form.addEventListener("submit", async (event) => {
 	};
 
 	document.body.appendChild(x);
+ */
+	location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
 
 });
