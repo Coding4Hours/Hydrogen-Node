@@ -1,7 +1,7 @@
 // This file overwrites the stock UV config.js
 
 self.__uv$config = {
-    prefix: "/hydrogen-uv/",
+    prefix: "/uv/service/",
     bare: [
       "https://tomp.app",
     ],  
