@@ -3,3 +3,4 @@ User-agent: *
 Disallow:/
 Disallow: /js/
 Disallow: /uv/
+Disallow: /img/
