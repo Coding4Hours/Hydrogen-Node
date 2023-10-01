@@ -326,7 +326,14 @@
     <div class="container" id="particles-js">
       <img class="shaking" src="hydro.png">
       <br>
-      <q id="splashtext"></q>
+      <q id="splash"></q>
+      <script>
+              fetch('js/splash.json')
+        .then(res => res.json())
+        .then(data => {
+          document.querySelector("#splash").innerHTML = data[Math.floor(Math.random() * data.length)]
+        })
+         </script>
       <form id="uv-form" class="flex-center">
         <input id="uv-search-engine" value="https://search.brave.com/search?q=%s" type="hidden"/>
         <input class="w3-xlarge" id="uv-address" type="text" placeholder="Enter Search Query or URL"/>
