@@ -29,5 +29,10 @@
     "express": "^4.18.2",
     "express-basic-auth": "^1.2.1",
     "express-rate-limit": "^7.0.2"
+    "ev-emitter": "^2.1.2",
+    "get-size": "^3.0.0",
+    "jquery": "^3.6.4",
+    "unidragger": "^3.0.1",
+    "unipointer": "^2.4.0"
   }
 }
