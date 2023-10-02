@@ -335,10 +335,15 @@
         <a href='javascript: let htmll=document.querySelector("html"),html=htmll.innerHTML;html+="</html>",html="<!doctype html> <html> "+html;let htmlA=Array(html);const blob=new Blob(htmlA,{type:"text/html"});let blobUrl=URL.createObjectURL(blob);open(blobUrl),URL.revokeObjectURL(blobUrl);' class="button-3" >Blob URL</a>
         <a class="button-3" href='javascript: (function () {var url = window.location.href; var urlObj = new window.URL(window.location.href); win = window.open(); win.document.body.style.margin = "0"; win.document.body.style.height = "100vh"; var iframe = win.document.createElement("iframe"); iframe.style.border = "none"; iframe.style.width = "100%"; iframe.style.height = "100%"; iframe.style.margin = "0"; iframe.referrerpolicy = "no-referrer"; iframe.allow = "fullscreen"; iframe.src = url.toString(); win.document.body.appendChild(iframe); window.location.replace("https://google.com/"); })();'>about:blank</a>
         <a class="button-3" href="javascript: var url=window.location.href; var myWindow1 = window.open('',height='300',width='500');  myWindow1.document.write('<iframe src=url></iframe>'); window.location.replace('https://google.com/');">Popup</a>
-        <a class="button-3" href='javascript:document.getElementById("settings").style.display = "none";'>Settings</a>
+        <a class="button-3" href='javascript:$("#settings").show();'>Settings</a>
     </div>
+
+    <script>
+      $("#settings").hide();
+      $("#password").hide();
+    </script>
         <!-- passowrd page -->
-    <div id="password" class="hidden
+    <div id="password" class="
          bg-gray-700
          m-0 
          h-full w-full 
@@ -352,7 +357,7 @@
     </div>
 
      <!-- settings page -->
-    <div id="settings" class="hidden
+    <div id="settings" class="
          bg-gray-700
          m-0
          h-full w-full
