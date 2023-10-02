@@ -78,17 +78,10 @@ npm start
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-### Built With
-<pre>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height="40" width="40" alt="HTML">  HTML</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" height="40" width="40" alt="Javascript">  Javascript</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" height="40" width="40" alt="CSS">  CSS</a></li>
-</ul>
-  </pre>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+### Links
+[https://hydra-5gqe.onrender.com/](https://hydra-5gqe.onrender.com/)
+[https://mathiscool-2leg.onrender.com/](https://mathiscool-2leg.onrender.com/)
+[https://mathiscoolbecauseitsfunbecausethereslogi.onrender.com/](https://mathiscoolbecauseitsfunbecausethereslogi.onrender.com/)
 
 <!-- CONTRIBUTING -->
 ## Contributing
