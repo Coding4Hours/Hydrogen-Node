@@ -2,8 +2,7 @@
 if (getPassword() == null) {
     
 } else {
-    openPage('password');
-    document.getElementById('sidebar').style.display = 'none';
+    document.getElementById("password").style.display = "flex";
 }
 
 function getPassword() {
@@ -44,80 +43,6 @@ function togglePassword() {
 }
 
 // end of password protection
-  
-
-// open url function
-function openURL(url) {
-    window.navigator.serviceWorker
-    .register("./uv.js", {
-      scope: __uv$config.prefix,
-    })
-    .then(() => {
-      if (!isUrl(url)) url = getSearchEngineURL() + url;
-      else if (!(url.startsWith("https://") || url.startsWith("http://")))
-        url = "http://" + url;
-
-      if (getAboutBlank() === 'on') {
-        openAboutBlank(window.location.href.slice(0, -1) + __uv$config.prefix + __uv$config.encodeUrl(url));
-      } else {
-        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
-      }
-    });
-};
-
-selectedIcon('icon-home');
-
-setupCloak();
-
-if (getAboutBlank() === 'on') {
-    openPage('search');
-    selectedIcon('icon-search');
-}
-
-setupCustomShortcut();
-
-// Start of about:blank functions
-
-function getAboutBlank() {
-    if (localStorage.getItem('aboutBlank') === 'on') {
-        var introText = document.getElementById("introText");
-        introText.innerHTML = "<b>Elixir:</b><br>Search the web without censorship or tracking.</a>"
-
-        var searchPlaceholder = document.querySelector("input");
-        searchPlaceholder.placeholder = "Search here without tracking";
-
-        return 'on';
-    } else {
-        return 'off';
-    }
-}
-
-// Opens page in a new about:blank tab
-function setAboutBlank() {
-    const $aboutBlankSelect = document.getElementById('aboutBlankSelect');
-    const aboutBlankSelect = $aboutBlankSelect.value;
-    if (aboutBlankSelect === 'on') {
-        localStorage.setItem('aboutBlank', 'on');
-        openAboutBlank();
-    } else if (aboutBlankSelect === 'off') {
-        localStorage.setItem('aboutBlank', 'off');
-    }
-}
-
-// opens page in about:blank
-function openAboutBlank(url) {
-    if (url === undefined) {
-      var encoded_url = window.location.origin;
-    }
-    else {
-      var encoded_url = url;
-    }
-    var w = open('about:blank', '_blank') || alert("It seems like you are blocking pop-ups. Please try again once you have allowed pop-ups.")
-      w.document.write(`<iframe style="height: 100%; width: 100%; border: none;" src="${encoded_url}" allowfullscreen></iframe>`)
-      w.document.body.style.margin = '0'
-    window.location.replace(getSearchEngineURL()); 
-}
-// end of about:blank functions
 
 // changes the selected icon
 function selectedIcon(icon) {
