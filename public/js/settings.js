@@ -44,21 +44,6 @@ function togglePassword() {
 }
 
 // end of password protection
-
-form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    let url = input.value.trim();
-    openURL(url);
-  });
-  
-function isUrl(val = "") {
-    if (
-        /^http(s?):\/\//.test(val) ||
-        (val.includes(".") && val.substr(0, 1) !== " ")
-    )
-        return true;
-    return false;
-}
   
 
 // open url function
@@ -90,83 +75,6 @@ if (getAboutBlank() === 'on') {
 }
 
 setupCustomShortcut();
-
-const $searchSelect = document.getElementById('searchSelect');
-$searchSelect.value = getSearchEngine();
-
-const $analyticsSelect = document.getElementById('analyticsSelect');
-$analyticsSelect.value = getAnalytics();
-
-const $aboutBlankSelect = document.getElementById('aboutBlankSelect');
-$aboutBlankSelect.value = getAboutBlank();
-
-// Check their preferred search engine
-function getSearchEngine () {
-    return localStorage.getItem('searchEngine') || 'Google';
-}
-
-// start of anaylitics functions
-
-function getAnalytics() {
-    return localStorage.getItem('analytics') || 'on';
-}
-
-function setAnalytics() {
-    const $analyticsSelect = document.getElementById('analyticsSelect');
-    const analyticsPref = $analyticsSelect.value;
-    if (analyticsPref === 'on') {
-        localStorage.setItem('analytics', 'on');
-    } else if (analyticsPref === 'off') {
-        localStorage.setItem('analytics', 'off');
-    }
-    location.reload();
-}
-
-// analytics (change it if you want to enable it)
-if(localStorage.getItem('analytics') != 'off') {
-    var scriptTagGTAG = document.createElement('script');
-    scriptTagGTAG.setAttribute('async', '');
-    scriptTagGTAG.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=G-CX3B4NHEG0');
-    document.head.appendChild(scriptTagGTAG);
-    // gtag
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)};
-    gtag('js', new Date());
-
-    gtag('config', 'G-CX3B4NHEG0');
-
-    // arc
-    var scriptTagARC = document.createElement('script');
-    scriptTagARC.setAttribute('async', '');
-    scriptTagARC.setAttribute('src', 'https://arc.io/widget.min.js#85sFzH5m');
-    document.head.appendChild(scriptTagARC);
-}
-
-// end of anaylitics functions
-
-// Set their preferred search engine
-function setSearchEngine () {
-    const $searchSelect = document.getElementById('searchSelect');
-    const searchEngine = $searchSelect.value;
-    if (searchEngine === 'Google') {
-        localStorage.setItem('searchEngineURL', 'https://google.com/search?q=');
-        localStorage.setItem('searchEngine', 'Google');
-    } else if (searchEngine === 'DuckDuckGo') {
-        localStorage.setItem('searchEngineURL', 'https://duckduckgo.com/?q=');
-        localStorage.setItem('searchEngine', 'DuckDuckGo');
-    } else if (searchEngine === 'Bing') {
-        localStorage.setItem('searchEngineURL', 'https://bing.com/search?q=');
-        localStorage.setItem('searchEngine', 'Bing');
-    } else if (searchEngine === 'Brave Search') {
-        localStorage.setItem('searchEngineURL', 'https://search.brave.com/search?q=');
-        localStorage.setItem('searchEngine', 'Brave Search');
-    }
-}
-
-// get search engine url
-function getSearchEngineURL() {
-    return localStorage.getItem('searchEngineURL') || 'https://google.com/search?q=';
-}
 
 // Start of about:blank functions
 
@@ -218,35 +126,6 @@ function selectedIcon(icon) {
         element.classList.remove('sidebar-icon-selected');
     });
     document.getElementById(icon).classList.toggle('sidebar-icon-selected')
-}
-
-// opens a certain page using css and hides the others
-function openPage(page) {
-    if (page === 'home') {
-        document.getElementById("search").style.display = "none";
-        document.getElementById("settings").style.display = "none";
-        document.getElementById("home").style.display = "flex";
-        document.getElementById("footer").style.display = "block";
-        document.getElementById("password").style.display = "none";
-    } else if (page === 'search') {
-        document.getElementById("home").style.display = "none";
-        document.getElementById("settings").style.display = "none";
-        document.getElementById("search").style.display = "flex";
-        document.getElementById("footer").style.display = "block";
-        document.getElementById("password").style.display = "none";
-    } else if (page === 'settings') {
-        document.getElementById("home").style.display = "none";
-        document.getElementById("search").style.display = "none";
-        document.getElementById("settings").style.display = "flex";
-        document.getElementById("footer").style.display = "none";
-        document.getElementById("password").style.display = "none";
-    } else if (page === 'password') {
-        document.getElementById("home").style.display = "none";
-        document.getElementById("search").style.display = "none";
-        document.getElementById("settings").style.display = "none";
-        document.getElementById("footer").style.display = "none";
-        document.getElementById("password").style.display = "flex";
-    }
 }
 
 // sets the custom shortcut
@@ -337,57 +216,3 @@ function changeFavicon(src) {
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register(window.location.origin + "/js/sw.js");
   }
-
-// announcement code
-function announcement(text) {
-    document.getElementById("notification-text").innerHTML = text;
-    document.getElementById("announcement").style.display = "block";
-}
-
-function fetchAnnouncement() {
-    fetch("./assets/announcement.json")
-    .then(response => response.json())
-    .then(data => {
-        // randonly selects an announcement
-        const announcementText = data.announcements.sort();
-        const randomAnnouncement = announcementText[Math.floor(Math.random() * announcementText.length)];
-        const importantAnnouncement = data['important'][0]
-        const superAnnouncement = data['super'][0]
-        if (superAnnouncement != null) {
-            announcement(superAnnouncement);
-        } else {
-            // randomly choose between important and normal announcement
-            const random = Math.floor(Math.random() * 2);
-            if (random === 0) {
-                announcement(randomAnnouncement);
-            } else {
-                announcement(importantAnnouncement);
-            }
-        }
-    });
-}
-
-function closeAnnouncement() {
-    document.getElementById("announcement").style.display = "none";
-    // dont show for 24 hours
-    localStorage.setItem('announcement', Date.now());
-}
-
-function showAnnouncement() {
-    // check if announcement has been shown in the last 24 hours
-    if (localStorage.getItem('announcement') != null) {
-        const lastShown = localStorage.getItem('announcement');
-        const now = Date.now();
-        const diff = now - lastShown;
-        const hours = Math.floor(diff / 1000 / 60 / 60);
-        if (hours > 2) {
-            fetchAnnouncement();
-        }
-    } else {
-        fetchAnnouncement();
-    }
-}
-
-showAnnouncement();
-
-// end of announcement code
