@@ -1,6 +1,6 @@
 // start of password protection
 if (getPassword() == null) {
-    openPage('home');
+    
 } else {
     openPage('password');
     document.getElementById('sidebar').style.display = 'none';
