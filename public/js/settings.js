@@ -1,6 +1,3 @@
-const form = document.querySelector("form");
-const input = document.getElementById("searchInput");
-
 // start of password protection
 if (getPassword() == null) {
     openPage('home');
