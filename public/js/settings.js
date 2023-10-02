@@ -2,7 +2,7 @@
 if (getPassword() == null) {
     
 } else {
-    document.getElementById("password").style.display = "flex";
+    document.getElementById("password").style.display = "none";
 }
 
 function getPassword() {
