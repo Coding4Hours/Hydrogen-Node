@@ -104,10 +104,9 @@ Don't forget to give the project a star! Thanks again!
 
 
 <!-- LICENSE -->
-## License
+## Commit Activity
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
+![Alt](https://repobeats.axiom.co/api/embed/bee94e668e8faddbb7f9b344a2ddf5bfe99b28be.svg "Repobeats analytics image")
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
