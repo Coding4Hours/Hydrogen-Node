@@ -10,10 +10,10 @@
           let blobUrl=URL.createObjectURL(blob);
           open(blobUrl),URL.revokeObjectURL(blobUrl);
         } else if (option === 'popup') {
-         var url = window.location.href;
          var myWindow1 = window.open('about:blank',height='300',width='500');
-         myWindow1.document.write('<iframe src=${url}></iframe>');
-         window.location.replace('https://google.com/');
+        var iframe = win.document.createElement("iframe");
+        iframe.src = window.location.href
+        window.location.replace('https://google.com/');
         } else if (option === 'ab') {
         var url = window.location.href;
         var urlObj = new window.URL(window.location.href);
