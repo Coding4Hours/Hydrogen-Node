@@ -1,5 +1,5 @@
-var eventKey = localStorage.getItem("eventKey") || prompt("What panic key do you want?"");
-var panicLink = localStorage.getItem("panicLink") || prompt("What panic link do you want?"";
+var eventKey = localStorage.getItem("eventKey") || prompt('What panic key do you want?');
+var panicLink = localStorage.getItem("panicLink") || prompt('What panic link do you want?');
 document.addEventListener("keydown", function(event) {
   if (event.key === eventKey) {
     if (window.self !== window.top) {
