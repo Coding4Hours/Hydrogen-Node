@@ -63,7 +63,7 @@ there are two deploy on render buttons one for just a web service and one for us
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Hydrogen-Network/Hydrogen-hub&branch=main&name=Ultraviolet-App)
 
 ```bash
-git clone https://github.com/Hydrogen-Network/Hydrogen-hub
+git clone https://github.com/Hydrogen-Network/Hydrogen
 # clone the repo
 cd Hydrogen-hub
 # open the folder with the files
