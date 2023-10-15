@@ -1,3 +1,9 @@
+# ARCHIVED
+this has been archived. Use the static version for a better experience
+
+<a href="https://github.com/Hydrogen-Network/Hydrogen-Static"><iframe src="https://github.com/Hydrogen-Network/Hydrogen-Static"/></a>
+
+
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
