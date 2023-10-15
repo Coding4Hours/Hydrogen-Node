@@ -1,10 +1,7 @@
 # ARCHIVED
 this has been archived. Use the static version for a better experience
 
-<div style="position:relative;">
-<iframe src="https://github.com/Hydrogen-Network/Hydrogen-Static" width="500" height="500" />
-<a href="https://github.com/Hydrogen-Network/Hydrogen-Static" style="position:absolute; top:0; left:0; display:inline-block; width:500px; height:500px; z-index:5;"></a>
-</div>
+[https://github.com/Hydrogen-Network/Hydrogen-Static](https://github.com/Hydrogen-Network/Hydrogen-Static)
 
 <!-- PROJECT SHIELDS -->
 <!--
